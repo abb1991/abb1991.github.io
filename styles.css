@@ -1,10 +1,10 @@
 /** {outline: 1px solid red;}*/
-* { background: #f3fdff; }
+* { background: #f3fdff;}
   body {
     margin: 0px;
     font-family: helvetica;
     background: linear-gradient(-270deg,#c3dfe3, white);
-    color:#4e6d72; }
+    color:#4e6d72;}
   header {
     margin-top: 0px;
     background: linear-gradient(-270deg, white, #c3dfe3);
@@ -15,7 +15,15 @@
     border-bottom: solid;
     position: fixed;
     padding-right: 500px;
-    opacity: 0.8; }
+    opacity: 0.8;
+    z-index: 2; }
+    a {
+      z-index: 2;
+      position: relative;
+      opacity: .7;
+    }
+  a:visited {
+      color:grey; }
   img {
     margin-top: 50px;
     margin-left: 50px;
@@ -25,6 +33,15 @@
     display: inline-block; }
   table {
     font-size: 20px; }
+  #background {
+    background-image: url("tgoed.jpg");
+    background-size: 700%;
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    opacity: .07; }
   #contact {
     position: relative;
     padding-top: 20px; }
@@ -39,13 +56,17 @@
     top: 10px;
     right: 20px; }
   #JB {
-    width: 30%; }
-  #source {
+    width: 30% }
+  #last {
+    margin-left: 80px;
+    width: 80%; }
+  #source1, #source2, #source3 {
    color:#b4c3c5;
-   text-indent: 75px; }
+   text-indent: 75px;}
   footer {
     margin: 0px;
     text-align: center;
     background: linear-gradient(-270deg, white, #c3dfe3);
     padding: 20px;
-    border-top: solid; }
+    border-top: solid;
+    z-index: 2; }
