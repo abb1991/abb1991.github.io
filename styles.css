@@ -1,1 +1,51 @@
-body {background:blue}
+/** {outline: 1px solid red;}*/
+* { background: #f3fdff; }
+  body {
+    margin: 0px;
+    font-family: helvetica;
+    background: linear-gradient(-270deg,#c3dfe3, white);
+    color:#4e6d72; }
+  header {
+    margin-top: 0px;
+    background: linear-gradient(-270deg, white, #c3dfe3);
+    text-align:right;
+    font-size: 27px;
+    font-family: American Typewriter light;
+    color: #4e6d72;
+    border-bottom: solid;
+    position: fixed;
+    padding-right: 500px;
+    opacity: 0.8; }
+  img {
+    margin-top: 50px;
+    margin-left: 50px;
+    border: solid;
+    padding: 20px;
+    background: black;
+    display: inline-block; }
+  table {
+    font-size: 20px; }
+  #contact {
+    position: relative;
+    padding-top: 20px; }
+  #garden{
+    margin-left: 80px;
+    width: 80%; }
+  #home {
+    font-size: 15px;
+    text-align: right;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 20px; }
+  #JB {
+    width: 30%; }
+  #source {
+   color:#b4c3c5;
+   text-indent: 75px; }
+  footer {
+    margin: 0px;
+    text-align: center;
+    background: linear-gradient(-270deg, white, #c3dfe3);
+    padding: 20px;
+    border-top: solid; }
