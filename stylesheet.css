@@ -1,7 +1,13 @@
 body {
-  background-image: url("sangre_de_christo.jpg");
+  /*background-image: url("sangre_de_christo.jpg");*/
+  width: 50%;
 }
 
 * {
-  color: white;
+  color: black;
+  background-color: white;
+}
+
+.name {
+  color: black;
 }
