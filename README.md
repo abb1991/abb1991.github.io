@@ -1,2 +1,1 @@
-# abb1991.github.io
-Personal website
+Personal website hosted on Github at http://abb1991.github.io
