@@ -120,6 +120,7 @@ p {
 
 .cover-photo {
   max-width: 100%;
+  z-index: -1;
 }
 
 li {
@@ -158,4 +159,11 @@ li {
 .project-gallery:hover {
  border: 3px solid red;
  display: inline-block;
+}
+
+.st-johns-img,
+.dbc-img {
+  max-width: 100%;
+  min-width: 100%;
+  max-height:
 }
