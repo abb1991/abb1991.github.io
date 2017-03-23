@@ -140,3 +140,17 @@ li {
 .navbar-email {
   bottom: 5%;
 }
+
+.project-img {
+  max-width: 100%;
+}
+
+.project-gallery {
+  max-width: 25%;
+  display: inline-block;
+}
+
+.project-gallery:hover {
+ border: 3px solid red;
+ display: inline-block;
+}
