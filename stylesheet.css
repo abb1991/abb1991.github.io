@@ -100,7 +100,7 @@ span{
 .list-group-item {
   text-align: center;
   background-color: #B5C9D6;
-  font-family: Helvetica;
+  font-family:'Ubuntu Condensed', sans-serif;
   color: white;
   font-size: 1.4em;
 }
@@ -114,4 +114,8 @@ p {
 
 li {
   list-style: none;
+}
+
+.projects {
+  font-family: 'Source Code Pro', monospace;
 }
