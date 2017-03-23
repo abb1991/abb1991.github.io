@@ -4,20 +4,31 @@
 }
 
 .navbar {
-  background-color: #b5c9d6;
-  padding-right: 40px;
+  background-color: #2E86C1;
   min-height: 65px;
+  padding-left: 10%;
+  padding-right: 7%;
+  border-radius: 0;
+  margin-bottom: 0;
 }
 
+.navbar-brand{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1.8em;
+  letter-spacing: .1em;
+  text-shadow: 1px 1px grey;
+}
+
+.navbar-brand,
+.navbar-email,
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav>li>a,
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: white;
+    color: white
 }
 
-
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  background-color: #D6E1E8;
+  background-color: #85C1E9;
 }
 
 
@@ -26,6 +37,7 @@
   letter-spacing: .05em;
   line-height: 1.6em;
   padding: 0px;
+  width: 100%;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -93,7 +105,7 @@ span{
 .list-group-item {
   text-align: center;
   background-color: #B5C9D6;
-  font-family: Helvetica;
+  font-family:'Ubuntu Condensed', sans-serif;
   color: white;
   font-size: 1.4em;
 }
@@ -107,4 +119,24 @@ p {
 
 li {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.projects {
+  font-family: 'Source Code Pro', monospace;
+  letter-spacing: 0;
+}
+
+.projects,
+.education {
+  padding-right: 4%;
+}
+
+.navbar-footer {
+  display: inline-block;
+  vertical-align: middle;
+}
+.navbar-email {
+  bottom: 5%;
 }
