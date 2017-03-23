@@ -2,12 +2,15 @@
 <html>
 <head>
   <title>Alex Bills</title>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+
+  <script type="text/javascript">google.load("jquery", "1.3.2");</script>
+  <script type="text/javascript" src="javascript.js"></script>
 </head>
-<body class="container">
+<div class="container-fluid">
   <nav class="navbar navbar-default">
-    <div class="container-fluid">
       <!-- logo -->
 
       <div class="navbar-header">
@@ -19,40 +22,39 @@
       <div>
         <ul class="nav navbar-nav">
           <li class="active"><a href="/index">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li ><a href="/about">About</a></li>
+          <li ><a href="/contact">Contact</a></li>
+          <li ><a href="/resume">Resume</a></li>
+          <li ><a href="/random">Random</a></li>
         </ul>
+        <a id='linkedin' href="https://www.linkedin.com/in/alex-bills"><img src="images/linkedin.png" alt="linkedin" style="width:30px;height:30px;"></a>
       </div>
-    </div>
   </nav>
+</div>
+<body class="container">
   <div class="container">
     <div class="contact">
-      <a href="https://www.linkedin.com/in/alex-bills"><img src="linkedin-logo.png" alt="linkedin" style="width:30px;height:30px;"></a>
       <a href="mailto:alexbills1991@gmail.com" target="_top">alexbills1991@gmail.com</a>
     </div>
-    <h1 class="name">Alex Bills - full stack web developer</h1>
     <ul class="list-group">
-      <li class="list-group-item">Bio</li>
+      <li class="list-group-item">A little about me</li>
         <p>I recently graduated from Dev Bootcamp, an intensive web development course, and am now looking for opportunities to continue my growth as a developer with a company focused on creating unique and purposeful products that help create a more productive and meaningful experience.</p>
         <p>In addition to the technical aspects of web development, I'm deeply interested in how emerging and maturing technologies will shape what it means to be a 'digital citizen'. To that end, I'm interested in working with a team that puts a strong value on what new technologies should do, rather than just what they can do. Specifically, I hope to focus on aspects of consumer privacy which are present throughout the various phases of development.</p>
       <li class="list-group-item">Skills</li>
-        <ul>
-          <li>Ruby</li>
-          <li>Ruby on Rails</li>
-          <li>Sinatra</li>
-          <li>Javascript</li>
-          <li>React.js</li>
-          <li>jQuery</li>
-          <li>HTML/CSS</li>
-          <li>AJAX</li>
-          <li>Database ORM</li>
-          <li>PostgreSQL</li>
-          <li>Object Oriented Design</li>
-          <li>RESTful conventions</li>
-          <li>Angular2</li>
-          <li>RxJS</li>
-          <li>TypeScript</li>
-        </ul>
+        <div class="wrapper">
+          <span class="thumbnail"><img class="img-thumbnail" src="images/ruby.png"></span>
+          <span class="thumbnail"><img class="img-thumbnail" src="images/sinatra.png"></span>
+          <span class="thumbnail"><img class="img-thumbnail" src="images/rails.png"></span>
+          <span class="thumbnail"><img class="img-thumbnail" src="images/reactjs.png"></span>
+          <span class="thumbnail"><img class="img-thumbnail" src="images/es6.png"></span>
+          <span class="thumbnail"><img class="img-thumbnail" src="images/jasmine.png"></span>
+          <span class="thumbnail"><img class="img-thumbnail" src="images/rspec.png"></span>
+          <span class="thumbnail"><img class="img-thumbnail" src="images/bootstrap.png"></span>
+          <span class="thumbnail"><img class="img-thumbnail" src="images/jQuery.png"></span>
+          <span class="thumbnail"><img class="img-thumbnail" src="images/postgresql.png"></span>
+          <span class="thumbnail"><img class="img-thumbnail" src="images/restful.png"></span>
+          <span class="thumbnail"><img class="img-thumbnail" src="images/javascript.png"></span>
+        </div>
       <li class="list-group-item">Projects</li>
         <ul>
           <li><a href="https://github.com/abb1991/L-train-bingo">L Train Bingo</li>
@@ -94,5 +96,5 @@
         </ul>
     </ul>
 
-</div>
+  </div>
 </body>
