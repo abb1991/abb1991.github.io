@@ -83,6 +83,7 @@ span{
 
 .thumbnail {
   padding: 5px;
+  min-width: 100px;
   max-width: 70px;
   min-height: 50px;
   border: none;
@@ -113,8 +114,12 @@ span{
 p {
   padding: 10px;
   text-align: justify;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
+}
+
+.cover-photo {
+  max-width: 100%;
 }
 
 li {
