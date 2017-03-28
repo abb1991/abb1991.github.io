@@ -21,7 +21,11 @@
   margin-right: 2%;
 }
 .navbar {
-  background-color: #2E86C1;
+  background: rgb(73,155,234); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 );
   min-height: 10%;
   padding-left: 10%;
   padding-right: 7%;
@@ -65,7 +69,7 @@
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  background-color: #2E86C1;
+  background-color: transparent;
   text-decoration: underline;
 }
 
@@ -145,13 +149,17 @@ span{
 
 .list-group-item {
   text-align: center;
-  background-color: #78B1D7;
+  /*background-color: #78B1D7;*/
   font-family:'Ubuntu Condensed', sans-serif;
   color: white;
   font-size: 1.4em;
   border: none;
-
   box-shadow: 2px 2px 3px grey;
+  background: rgb(73,155,234); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 );
 }
 
 .list-group-item-icon {
