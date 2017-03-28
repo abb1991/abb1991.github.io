@@ -1,23 +1,45 @@
-#linkedin {
+#linkedin,
+#github {
   float: right;
-  margin-top: 10px;
+  /*margin-top: 0.7%;*/
+  border: 2px solid transparent;
 }
 
+#linkedin:hover,
+#github:hover {
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px solid white;
+  transition: border .3s;
+}
+
+#linkedin {
+  margin-right: 7%;
+}
+
+#github {
+  margin-right: 2%;
+}
 .navbar {
   background-color: #2E86C1;
-  min-height: 65px;
+  min-height: 10%;
   padding-left: 10%;
   padding-right: 7%;
   border-radius: 0;
   margin-bottom: 0;
   border: none;
-  box-shadow: 2px 2px 3px grey;
+  box-shadow: 1px 1px 2px grey;
   width: 100%;
   z-index: 1;
 }
 
+
 .navbar-top {
   position: fixed;
+}
+
+#navbar-items{
+  margin-top: 3%;
 }
 
 .navbar-brand{
@@ -25,18 +47,26 @@
   font-size: 1.8em;
   letter-spacing: .1em;
   text-shadow: 1px 1px grey;
+  margin-top: -1.3%;
+
 }
 
-.navbar-brand,
 .navbar-email,
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav>li>a,
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: white
+    color: white;
+    transition: color .2s;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  background-color: #85C1E9;
+  background-color: #2E86C1;
+  text-decoration: underline;
 }
 
 
@@ -120,11 +150,12 @@ span{
   color: white;
   font-size: 1.4em;
   border: none;
+
   box-shadow: 2px 2px 3px grey;
 }
 
 .list-group-item-icon {
-  max-width: 3%;
+  max-width: 4%;
   color: black;
 }
 
@@ -138,6 +169,7 @@ p {
   text-align: justify;
   width: 80%;
   margin: 0 auto;
+  font-size: 1.2em;
 }
 
 .cover-photo {
@@ -152,18 +184,29 @@ li {
 }
 
 .projects {
+  font-size: 1.5em;
   font-family: 'Source Code Pro', monospace;
   letter-spacing: 0;
   text-shadow: 2px 2px 2px #E5E5E5;
+  text-decoration: underline;
+  zoom: 100%;
+  transition: all 0.3s;
+}
+
+.projects:hover {
+  transition: all 0.3s;
 }
 
 .navbar-footer {
   display: inline-block;
   vertical-align: middle;
+  height: 10vh;
   z-index: 1;
+
 }
 .navbar-email {
-  bottom: 5%;
+  margin-top: 2.5vh;
+  display: inline-block;
 }
 
 .project-img {
@@ -171,12 +214,14 @@ li {
   box-shadow: 3px 3px 6px grey;
 }
 
+
+
 .project-gallery {
   max-width: 25%;
   display: inline-block;
   min-width: 300px;
-  min-height: 200px;
-  max-height: 200px;
+  min-height: 250px;
+  max-height: 250px;
   border: 3px solid white;
   padding: 1%;
   padding-top: 2%;
@@ -184,11 +229,18 @@ li {
 
 .project-gallery:hover {
  border: 3px solid red;
+ border-radius: 10px;
  display: inline-block;
+ transition: all 0.5s;
 }
 
 .project-gallery-img {
   padding-bottom: 5%;
+}
+
+.project-gallery-img:hover {
+  zoom: 110%;
+  transition: all 0.5s;
 }
 
 .st-johns-img,
@@ -205,4 +257,8 @@ li {
 .project-desc {
   padding: 2%;
   border-top: 1px solid black;
+}
+
+.subject-header {
+    min-height: 8vh;
 }
