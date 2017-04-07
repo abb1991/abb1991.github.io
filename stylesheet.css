@@ -123,12 +123,41 @@
   background-color: #4C759A;
 }
 
+#codecademy,
+#great-hearts,
+#meem {
+  text-align: left;
+  margin-left: 12.5vw;
+}
+
+#codecademy li,
+#great-hearts li,
+#meem li{
+  list-style-type: disc;
+}
+
+#meem {
+  padding-bottom: 3vh;
+}
+
+#education-li {
+  padding: 0px;
+  font-family:'Ubuntu Condensed', sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+ h3,
+ h4 {
+  text-align: center;
+}
 
 .container {
   text-align: center;
   letter-spacing: .05em;
   line-height: 1.6em;
   padding: 0px;
+  margin-bottom: -2.3%;
   width: 100%;
   background: rgb(255,255,255); /* Old browsers */
 background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 99%, rgba(246,246,246,1) 99%, rgba(237,237,237,1) 100%); /* FF3.6-15 */
@@ -148,30 +177,6 @@ button.accordion {
     border: none;
     outline: none;
     transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-div.panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-}
-
-button.accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-}
-
-button.accordion.active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 span{
@@ -319,6 +324,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f465b', end
   max-width: 100%;
   min-width: 100%;
   max-height:
+}
+
+.dbc-img {
+  margin-top: 1%;
 }
 
 .project-ul {
