@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title>Alex Bills</title>
 
     <!-- tab icon  -->
@@ -23,6 +24,7 @@
     <script type="text/javascript" src="javascript.js"></script>
   </head>
   <nav class="navbar navbar-top fixed-top navbar-default">
+      <img id="prof-pic" src="./images/profile.jpeg">
 
       <!-- logo -->
       <div id="navbar-items">
@@ -32,12 +34,12 @@
 
         <!-- menu items -->
 
-        <div>
+        <div id="navbar-list-items">
           <ul class="nav navbar-nav">
             <li class="active"><a href="/index">Home</a></li>
             <li ><a href="/about">About</a></li>
             <li ><a href="/contact">Contact</a></li>
-            <li ><a href="/resume">Resume</a></li>
+            <li ><a href="./images/alex-bills-resume.pdf">Resume</a></li>
             <li ><a href="/random">Random</a></li>
           </ul>
           <a id='linkedin' href="https://www.linkedin.com/in/alex-bills"><img src="images/thumbnails/linkedin.png" alt="linkedin" style="width:30px;height:30px;"></a>
@@ -53,22 +55,26 @@
       </div>
       <ul class="list-group">
         <li class="list-group-item subject-header"><img class="list-group-item-icon" src="images/icons/bio.png"></li>
-          <p>I recently graduated from Dev Bootcamp, an intensive web development course, and am now looking for opportunities to continue my growth as a developer with a company focused on creating unique and purposeful products that help create a more productive and meaningful experience.</p>
-          <p>In addition to the technical aspects of web development, I'm deeply interested in how emerging and maturing technologies will shape what it means to be a 'digital citizen'. To that end, I'm interested in working with a team that puts a strong value on what new technologies should do, rather than just what they can do. Specifically, I hope to focus on aspects of consumer privacy which are present throughout the various phases of development.</p>
+          <p> I'm a full-stack web developer looking to continue my growth through a challenging new position. My background is in education and liberal arts, which have informed many of the fundamental choices I make as a developer. I build from a user-first perspective, with the ultimate goal of creating something intuitive that they'll love.</p>
+          <p>In addition to the technical aspects of web development, I'm deeply interested in how emerging and maturing technologies will shape what it means to be a 'digital citizen'. To that end, I'm interested in working with a team that puts a strong value on what new technologies should do, rather than just what they can do.</p>
         <li class="list-group-item subject-header tools"><img class="list-group-item-icon" src="images/icons/tools.png"></li>
           <div class="wrapper">
-            <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/ruby.png"></span>
-            <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/sinatra.png"></span>
-            <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/rails.png"></span>
-            <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/reactjs.png"></span>
-            <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/es6.png"></span>
-            <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/jasmine.png"></span>
-            <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/rspec.png"></span>
-            <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/bootstrap.png"></span>
-            <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/jQuery.png"></span>
-            <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/postgresql.png"></span>
-            <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/restful.png"></span>
-            <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/javascript.png"></span>
+            <div id="thumbnails-top">
+              <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/ruby.png"></span>
+              <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/sinatra.png"></span>
+              <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/rails.png"></span>
+              <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/reactjs.png"></span>
+              <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/es6.png"></span>
+              <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/jasmine.png"></span>
+            </div>
+            <div id="thumbnails-bottom">
+              <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/rspec.png"></span>
+              <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/bootstrap.png"></span>
+              <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/jQuery.png"></span>
+              <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/postgresql.png"></span>
+              <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/restful.png"></span>
+              <span class="thumbnail"><img class="img-thumbnail" src="images/thumbnails/javascript.png"></span>
+            </div>
           </div>
         <li class="list-group-item subject-header"><img class="list-group-item-icon" src="images/icons/code.png"></li>
 
@@ -137,7 +143,7 @@
 
     </div>
   </body>
-  <nav class="navbar fixed-bottom navbar-light bg-faded">
+  <nav id="footer" class="navbar fixed-bottom navbar-light bg-faded">
     <div class="navbar-footer">
       <a class="navbar-email" href="mailto:alexbills1991@gmail.com" target="_top">alexbills1991@gmail.com</a>
     </div>
