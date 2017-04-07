@@ -25,6 +25,46 @@
 #github {
   margin-right: 2%;
 }
+
+#contact{
+  display: none;
+  color: white;
+  border: none;
+  padding: 1.5%;
+  position: fixed;
+  margin-top: 5px;
+  left: 22.7%;
+  top: 10vh;
+  background-color: black;
+  opacity: .8;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px #38536c;
+  max-width: 20%;
+  min-width: 235px;
+}
+
+@media (max-width: 768px) {
+  #contact{
+    top: 35vh;
+    left: 35%;
+  }
+
+ }
+
+#location-icon,
+#email-icon,
+#phone-icon {
+  display: inline-block;
+  text-align: center;
+  max-width: 10%;
+  min-width: 15px;
+}
+
+#contact span {
+  display: inline-block;
+  text-align: left;
+  margin-top: 2%;
+}
 .navbar {
   background-color: #4C759A;
   min-height: 10%;
@@ -57,6 +97,7 @@
 }
 
 .navbar-email,
+.navbar-email-top,
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav>li>a,
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
@@ -235,7 +276,8 @@ li {
 
 .project-img {
   max-width: 100%;
-  box-shadow: 3px 3px 6px grey;
+  box-shadow: 0px 0px 3px 3px white;
+  border: 2px solid black;
 }
 
 
@@ -252,22 +294,22 @@ li {
 }
 
 
-.project-gallery:hover {
- border: 3px solid red;
- border-radius: 10px;
- display: inline-block;
- transition: all 0.5s;
+.project-img:hover {
+ box-shadow: 0px 0px 3px 3px #e85d66;
+ transition: all 0.3s;
 }
 
 .project-gallery-img {
   padding-bottom: 5%;
+  background: rgba(47,70,91,1);
+background: -moz-linear-gradient(top, rgba(47,70,91,1) 0%, rgba(7,34,59,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(47,70,91,1)), color-stop(100%, rgba(7,34,59,1)));
+background: -webkit-linear-gradient(top, rgba(47,70,91,1) 0%, rgba(7,34,59,1) 100%);
+background: -o-linear-gradient(top, rgba(47,70,91,1) 0%, rgba(7,34,59,1) 100%);
+background: -ms-linear-gradient(top, rgba(47,70,91,1) 0%, rgba(7,34,59,1) 100%);
+background: linear-gradient(to bottom, rgba(47,70,91,1) 0%, rgba(7,34,59,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f465b', endColorstr='#07223b', GradientType=0 );
 }
-
-.project-gallery-img:hover {
-  zoom: 110%;
-  transition: all 0.5s;
-}
-
 .st-johns-img,
 .dbc-img {
   max-width: 100%;
