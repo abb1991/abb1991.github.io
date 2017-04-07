@@ -12,7 +12,12 @@
   box-shadow: 2px 2px 4px solid white;
   transition: border .3s;
 }
-
+#prof-pic {
+  margin-top: 1vh;
+  float: right;
+  max-width: 5%;
+  border-radius: 5px;
+}
 #linkedin {
   margin-right: 7%;
 }
@@ -21,18 +26,14 @@
   margin-right: 2%;
 }
 .navbar {
-  background: rgb(73,155,234); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 );
+  background-color: #4C759A;
   min-height: 10%;
   padding-left: 10%;
   padding-right: 7%;
   border-radius: 0;
   margin-bottom: 0;
   border: none;
-  box-shadow: 1px 1px 2px grey;
+  box-shadow: 1px 1px 2px #38536c;
   width: 100%;
   z-index: 1;
 }
@@ -47,7 +48,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 }
 
 .navbar-brand{
-  font-family: 'Abril Fatface', cursive;
+  font-family:'Ubuntu Condensed', sans-serif;
   font-size: 1.8em;
   letter-spacing: .1em;
   text-shadow: 1px 1px grey;
@@ -73,6 +74,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
   text-decoration: underline;
 }
 
+#footer {
+  background-color: #4C759A;
+}
+
 
 .container {
   text-align: center;
@@ -80,6 +85,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
   line-height: 1.6em;
   padding: 0px;
   width: 100%;
+  background: rgb(255,255,255); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 99%, rgba(246,246,246,1) 99%, rgba(237,237,237,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 99%,rgba(246,246,246,1) 99%,rgba(237,237,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 99%,rgba(246,246,246,1) 99%,rgba(237,237,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=1 );
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -132,11 +142,20 @@ span{
   vertical-align: middle;
   display: inline-block;
   margin: 0 auto;
+  background: #f8f8f8;
 }
 
 .img-thumbnail {
   bottom: 0;
-  border: 0px solid white;
+  border: 0px solid #f8f8f8;
+  background: #f8f8f8;
+}
+
+#thumbnails-top,
+#thumbnails-bottom {
+  display: inline-block;
+  width: 100%;
+  margin: 2%;
 }
 
 .wrapper {
@@ -144,27 +163,24 @@ span{
   padding-left: 3%;
   text-align: center;
   padding-left: 0;
-
+  max-width: 80%;
 }
 
 .list-group-item {
   text-align: center;
-  /*background-color: #78B1D7;*/
+  background-color: #4C759A;
   font-family:'Ubuntu Condensed', sans-serif;
   color: white;
   font-size: 1.4em;
   border: none;
   box-shadow: 2px 2px 3px grey;
-  background: rgb(73,155,234); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 );
+
 }
 
 .list-group-item-icon {
   max-width: 4%;
   color: black;
+  opacity: .7;
 }
 
 .list-group-item:first-child {
@@ -230,10 +246,11 @@ li {
   min-width: 300px;
   min-height: 250px;
   max-height: 250px;
-  border: 3px solid white;
+  border: 3px solid transparent;
   padding: 1%;
   padding-top: 2%;
 }
+
 
 .project-gallery:hover {
  border: 3px solid red;
