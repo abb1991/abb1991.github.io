@@ -49,7 +49,7 @@
 
 @media (max-width: 768px) {
   #contact{
-    top: 35vh;
+    top: 22.7vh;
     left: 35%;
   }
 
@@ -289,12 +289,12 @@ li {
   letter-spacing: 0;
   text-shadow: 2px 2px 2px #E5E5E5;
   text-decoration: underline;
-  zoom: 100%;
   transition: all 0.3s;
 }
 
 .projects:hover {
-  transition: all 0.3s;
+  color: #56BAEC;
+  transition: all 0.2s;
 }
 
 .navbar-footer {
@@ -348,7 +348,7 @@ li {
 }
 
 #message-logo {
-  background-color: #A5D1F3;
+  background-color: rgb(135, 206, 250);
 }
 
 #l-train-logo {
@@ -392,4 +392,17 @@ li {
 
 .subject-header {
     min-height: 8vh;
+}
+
+#about-st-johns,
+#about-dev-bootcamp  {
+  color: white;
+}
+
+#about-st-johns:hover,
+#about-dev-bootcamp:hover,
+.navbar-email:hover {
+  color: #56BAEC;
+  text-decoration: none;
+  transition: all .2s;
 }
