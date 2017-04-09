@@ -24,7 +24,22 @@ setInterval( ()=> {
   })
 }, 300)
 
-console.log('me')
+
+const fade = (function(){
+  var icon, text;
+    $('.list-group-item').hover(() => {
+      icon = $(event.target).find('.list-group-item-icon')
+      text = $(event.target).find('.about')
+      text.fadeIn(400)
+      icon.fadeOut(300)
+    }, ()=>{
+      text.fadeOut(300)
+      icon.fadeIn(400)
+      icon = '';
+      text = '';
+    })
+})();
+
 
 
 
