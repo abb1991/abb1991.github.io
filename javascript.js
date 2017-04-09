@@ -12,6 +12,18 @@ $("*").each( function () {
     }
 });
 
+setInterval( ()=> {
+  $(window).scroll( () => {
+    if($(window).scrollTop() < 100){
+      $('.navbar-top').removeClass('navbar-scrolled');
+      $('.navbar-top').addClass('navbar');
+    } else {
+      $('.navbar-top').removeClass('navbar');
+      $('.navbar-top').addClass('navbar-scrolled');
+    }
+  })
+}, 300)
+
 console.log('me')
 
 
