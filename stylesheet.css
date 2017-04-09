@@ -241,7 +241,6 @@ span{
   font-size: 1.4em;
   border: none;
   box-shadow: 2px 2px 3px grey;
-
 }
 
 .list-group-item-icon {
@@ -311,9 +310,11 @@ li {
 }
 
 .project-img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   box-shadow: 0px 0px 3px 3px white;
   border: 2px solid black;
+  background-color: white;
 
   -webkit-box-reflect: below 0px
   -webkit-gradient(linear, left top, left bottom,
@@ -327,14 +328,32 @@ li {
 .project-gallery {
   max-width: 25%;
   display: inline-block;
-  min-width: 300px;
-  min-height: 250px;
-  max-height: 250px;
+  width: 250px;
+  height: 250px;
   border: 3px solid transparent;
   padding: 1%;
   padding-top: 2%;
 }
 
+#hearts-logo {
+  background-color: black;
+}
+
+#battleship-logo {
+  background-color: #7ABA7A;
+}
+
+#shortstack-logo {
+  background-color: #8C489F;
+}
+
+#message-logo {
+  background-color: #A5D1F3;
+}
+
+#l-train-logo {
+  background-color: #FFCC00;
+}
 
 .project-img:hover {
  box-shadow: 0px 0px 3px 3px #e85d66;
@@ -344,13 +363,13 @@ li {
 .project-gallery-img {
   padding-bottom: 5%;
   background: rgba(47,70,91,1);
-background: -moz-linear-gradient(top, rgba(47,70,91,1) 0%, rgba(7,34,59,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(47,70,91,1)), color-stop(100%, rgba(7,34,59,1)));
-background: -webkit-linear-gradient(top, rgba(47,70,91,1) 0%, rgba(7,34,59,1) 100%);
-background: -o-linear-gradient(top, rgba(47,70,91,1) 0%, rgba(7,34,59,1) 100%);
-background: -ms-linear-gradient(top, rgba(47,70,91,1) 0%, rgba(7,34,59,1) 100%);
-background: linear-gradient(to bottom, rgba(47,70,91,1) 0%, rgba(7,34,59,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f465b', endColorstr='#07223b', GradientType=0 );
+  background: -moz-linear-gradient(top, rgba(47,70,91,1) 0%, rgba(7,34,59,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(47,70,91,1)), color-stop(100%, rgba(7,34,59,1)));
+  background: -webkit-linear-gradient(top, rgba(47,70,91,1) 0%, rgba(7,34,59,1) 100%);
+  background: -o-linear-gradient(top, rgba(47,70,91,1) 0%, rgba(7,34,59,1) 100%);
+  background: -ms-linear-gradient(top, rgba(47,70,91,1) 0%, rgba(7,34,59,1) 100%);
+  background: linear-gradient(to bottom, rgba(47,70,91,1) 0%, rgba(7,34,59,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f465b', endColorstr='#07223b', GradientType=0 );
 }
 .st-johns-img,
 .dbc-img {
