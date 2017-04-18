@@ -438,6 +438,17 @@ li {
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
+
+  .navbar-brand,
+  .navbar-nav>li>a{
+    font-size: 2.2em;
+  }
+
+
+  .navbar-top {
+    padding-left: 0;
+  }
+
   .container{
     overflow-x: hidden;
   }
@@ -480,6 +491,38 @@ and (max-device-width : 667px) {
 
   h3, h4 {
     font-size: 1.3em;
+  }
+
+  #github > img{
+    width: 57px;
+    height: 57px;
+    position: fixed;
+    right: 30px;
+    top: 29px;
+  }
+
+  #linkedin > img{
+    width: 54px;
+    height: 54px;
+    position: fixed;
+    right: 108px;
+  }
+
+  #contact {
+    left: 0;
+    max-width: 100%;
+    min-width: 235px;
+    top: 9.7vh;
+  }
+
+  #contact span {
+    font-size: 33px;
+  }
+  #contact-email {
+    padding-left: 16%;
+  }
+  #contact-location{
+    padding-left: 22%;
   }
 }
 
