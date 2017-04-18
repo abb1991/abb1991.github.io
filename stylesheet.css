@@ -66,25 +66,7 @@ and (max-device-width : 1024px) {
     transition: all 1.0s;
   }
 
-/*iphone*/
 
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px)
-and (orientation : landscape) {
-  .container{
-    overflow-x: hidden;
-  }
-  .cover-photo {
-
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    transition: all 1.0s;
-  }
-
-}
 
   #contact{
     top: 22.7vh;
@@ -189,12 +171,6 @@ and (orientation : landscape) {
 #meem {
   text-align: left;
   margin-left: 12.5vw;
-}
-
-#codecademy li,
-#great-hearts li,
-#meem li{
-  list-style-type: disc;
 }
 
 #meem {
@@ -457,14 +433,53 @@ li {
   padding-bottom: 2.5%;
 }
 
+/*iphone*/
+
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
+  .container{
+    overflow-x: hidden;
+  }
+  .thumbnail{
+    max-width: 200px;
+    margin: 20px;
+  }
   *{
     font-size: 27px;
   }
   a{
     font-size: 30px;
+  }
+  .project-gallery{
+    max-width: 35%;
+    width: 350px;
+    height: 350px;
+  }
+  #prof-pic {
+    max-width: 20%;
+  }
+  p {
+    width: 90%;
+  }
+  #codecademy,
+  #great-hearts,
+  #meem{
+    font-size: 1.2em;
+    margin-left: 0px;
+  }
+
+  #codecademy p,
+  #great-hearts p,
+  #meem p{
+    margin: auto;
+    width: 100%;
+    text-align: left;
+    font-size: 32px;
+  }
+
+  h3, h4 {
+    font-size: 1.3em;
   }
 }
 
