@@ -175,7 +175,6 @@ and (max-device-width : 1024px) {
 #great-hearts,
 #meem {
   text-align: left;
-  margin-left: 12.5vw;
 }
 
 #meem {
@@ -274,7 +273,7 @@ span{
 
 p {
   padding: 20px;
-  text-align: justify;
+  text-align: center;
   width: 80%;
   margin: 0 auto;
   font-size: 1.2em;
