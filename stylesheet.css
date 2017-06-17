@@ -168,7 +168,7 @@ and (max-device-width : 1024px) {
 }
 
 #footer {
-  background-color: #4C759A;
+  background-color: black;
 }
 
 #codecademy,
@@ -445,7 +445,7 @@ and (max-device-width : 667px) {
 
   .navbar-brand,
   .navbar-nav>li>a{
-    font-size: 2.2em;
+    font-size: 1.2em;
   }
 
 
