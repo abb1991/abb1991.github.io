@@ -446,8 +446,13 @@ and (max-device-width : 667px) {
   .navbar-brand,
   .navbar-nav>li>a{
     font-size: 2.2em;
+    margin-top: .1vh;
   }
 
+  .list-group-item-icon {
+    max-width: 12vw;
+
+  }
 
   .navbar-top {
     padding-left: 0;
@@ -538,6 +543,10 @@ and (orientation : landscape) {
   .navbar-brand,
   .navbar-nav>li>a{
     font-size: 1.2em;
+  }
+
+  .subject-header {
+    min-height: 12vh;
   }
 }
 
