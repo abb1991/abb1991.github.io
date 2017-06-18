@@ -548,6 +548,10 @@ and (orientation : landscape) {
   .subject-header {
     min-height: 12vh;
   }
+
+  .list-group-item-icon {
+    max-width: 5vw;
+  }
 }
 
 @media only screen
