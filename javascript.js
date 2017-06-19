@@ -43,10 +43,10 @@ const fade = (function(){
 $('.project-img').hover(function(){
   // debugger;
   let id = event.target.id
-  $('.project-ul #' + id).toggle(100)
+  $('.project-ul #' + id).slideToggle(100)
 }, function(){
   let id = event.target.id
-  $('.project-ul #' + id).toggle(100)
+  $('.project-ul #' + id).slideToggle(100)
 })
 
 
