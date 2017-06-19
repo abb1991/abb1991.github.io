@@ -351,31 +351,31 @@ li {
   padding-top: 2%;
 }
 
-#hearts-logo {
+.project-gallery-img #hearts-logo {
   background-color: black;
 }
 
-#battleship-logo {
+.project-gallery-img #battleship-logo {
   background-color: #7ABA7A;
 }
 
-#shortstack-logo {
+.project-gallery-img #shortstack-logo {
   background-color: #8C489F;
 }
 
-#message-logo {
+.project-gallery-img #message-logo {
   background-color: rgb(135, 206, 250);
 }
 
-#investment-calc-logo {
+.project-gallery-img #investment-calc-logo {
   background-color: #FB9062;
 }
 
-#mello-jello-logo {
+.project-gallery-img #mello-jello-logo {
   background-color: #D4434A;
 }
 
-#l-train-logo {
+.project-gallery-img #l-train-logo {
   background-color: #FFCC00;
 }
 
@@ -412,6 +412,7 @@ li {
 .project-desc {
   padding: 2%;
   border-top: 1px solid black;
+  display: none;
 }
 
 .subject-header {
