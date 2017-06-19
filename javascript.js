@@ -40,6 +40,15 @@ const fade = (function(){
     })
 })();
 
+$('.project-img').hover(function(){
+  // debugger;
+  let id = event.target.id
+  $('.project-ul #' + id).toggle(100)
+}, function(){
+  let id = event.target.id
+  $('.project-ul #' + id).toggle(100)
+})
+
 
 
 
