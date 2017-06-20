@@ -17,6 +17,14 @@
   max-height: 40px;
 }
 
+#codecademy li,
+#great-hearts li,
+#meem li {
+  width: 38%;
+  margin: 0 auto;
+  list-style-type: disc;
+}
+
 #linkedin:hover,
 #github:hover {
   border: 2px solid white;
@@ -273,7 +281,7 @@ span{
 
 p {
   padding: 20px;
-  text-align: center;
+  text-align: left;
   width: 80%;
   margin: 0 auto;
   font-size: 1.2em;
@@ -460,7 +468,12 @@ and (max-device-width : 667px) {
 
   .list-group-item-icon {
     max-width: 12vw;
+  }
 
+  #codecademy li,
+  #great-hearts li,
+  #meem li {
+    width: 100%;
   }
 
   .navbar-top {
