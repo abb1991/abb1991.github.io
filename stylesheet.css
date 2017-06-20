@@ -16,7 +16,7 @@
   max-width: 40px;
   max-height: 40px;
 }
-
+#colonii li,
 #codecademy li,
 #great-hearts li,
 #meem li {
@@ -178,7 +178,7 @@ and (max-device-width : 1024px) {
 #footer {
   background-color: black;
 }
-
+#colonii,
 #codecademy,
 #great-hearts,
 #meem {
@@ -470,6 +470,7 @@ and (max-device-width : 667px) {
     max-width: 12vw;
   }
 
+  #colonii li,
   #codecademy li,
   #great-hearts li,
   #meem li {
@@ -504,13 +505,14 @@ and (max-device-width : 667px) {
   p {
     width: 90%;
   }
+  #colonii,
   #codecademy,
   #great-hearts,
   #meem{
     font-size: 1.2em;
     margin-left: 0px;
   }
-
+  #colonii p,
   #codecademy p,
   #great-hearts p,
   #meem p{
