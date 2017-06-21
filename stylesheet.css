@@ -492,6 +492,10 @@ li {
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
 
+  .arrow,
+  .arrow-on {
+    width: 13%;
+  }
   .navbar-brand,
   .navbar-nav>li>a{
     font-size: 2.2em;
