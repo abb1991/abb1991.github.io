@@ -65,6 +65,32 @@
   min-width: 235px;
 }
 
+.arrow-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.arrow {
+  width: 5%;
+  margin: 0 auto;
+  border: 3px solid #888;
+  border-radius: 71%;
+  padding: 1%;
+  margin-bottom: 3%;
+  transition: all 3s;
+}
+
+.arrow-on {
+  width: 5%;
+  margin: 0 auto;
+  border: 3px solid white;
+  border-radius: 71%;
+  padding: 1%;
+  margin-bottom: 3%;
+  transition: all 3s;
+}
+
 /*ipad*/
 @media only screen
 and (min-device-width : 668px)
