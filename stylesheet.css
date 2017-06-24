@@ -33,12 +33,11 @@
   transition: border .3s;
 }
 #prof-pic {
-    max-width: 8%;
-    min-width: 60px;
-    border-radius: 5px;
-    margin-right: 2%;
-    float: left;
-    box-shadow: 2px 2px 4px rgb(8, 35, 59);
+  max-width: 8%;
+  min-width: 60px;
+  margin-right: 2%;
+  float: left;
+  border: 1px solid black;
 }
 #linkedin {
   margin-right: 7%;
@@ -285,11 +284,13 @@ span{
   background-color: #4C759A;
   font-family:'Ubuntu Condensed', sans-serif;
   padding-left: 0;
+  padding-right: 0px;
   color: white;
   font-size: 1.4em;
   border: none;
   box-shadow: 2px 2px 3px rgb(8, 35, 59);
   height: 6vh;
+
 }
 
 .list-group-item-icon {
