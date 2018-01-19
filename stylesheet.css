@@ -16,7 +16,7 @@
   max-width: 40px;
   max-height: 40px;
 }
-
+#hazel li,
 #colonii li,
 #codecademy li,
 #great-hearts li,
@@ -205,6 +205,7 @@ and (max-device-width : 1024px) {
   background-color: black;
 }
 #colonii,
+#hazel,
 #codecademy,
 #great-hearts,
 #meem {
@@ -520,6 +521,7 @@ and (max-device-width : 667px) {
   }
 
   #colonii li,
+  #hazel li,
   #codecademy li,
   #great-hearts li,
   #meem li {
@@ -555,6 +557,7 @@ and (max-device-width : 667px) {
     width: 90%;
   }
   #colonii,
+  #hazel,
   #codecademy,
   #great-hearts,
   #meem{
@@ -562,6 +565,7 @@ and (max-device-width : 667px) {
     margin-left: 0px;
   }
   #colonii p,
+  #hazel p,
   #codecademy p,
   #great-hearts p,
   #meem p{
