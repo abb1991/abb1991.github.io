@@ -17,6 +17,15 @@
   max-height: 40px;
 }
 
+#colonii li,
+#codecademy li,
+#great-hearts li,
+#meem li {
+  width: 38%;
+  margin: 0 auto;
+  list-style-type: disc;
+}
+
 #linkedin:hover,
 #github:hover {
   border: 2px solid white;
@@ -25,12 +34,11 @@
   transition: border .3s;
 }
 #prof-pic {
-    max-width: 8%;
-    min-width: 60px;
-    border-radius: 5px;
-    margin-right: 2%;
-    float: left;
-    box-shadow: 2px 2px 4px rgb(8, 35, 59);
+  max-width: 8%;
+  min-width: 60px;
+  margin-right: 2%;
+  float: left;
+  border: 1px solid black;
 }
 #linkedin {
   margin-right: 7%;
@@ -55,6 +63,32 @@
   box-shadow: 1px 1px 2px #38536c;
   max-width: 20%;
   min-width: 235px;
+}
+
+.arrow-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.arrow {
+  width: 5%;
+  margin: 0 auto;
+  border: 3px solid #888;
+  border-radius: 71%;
+  padding: 1%;
+  margin-bottom: 3%;
+  transition: all 3s;
+}
+
+.arrow-on {
+  width: 5%;
+  margin: 0 auto;
+  border: 3px solid white;
+  border-radius: 71%;
+  padding: 1%;
+  margin-bottom: 3%;
+  transition: all 3s;
 }
 
 /*ipad*/
@@ -168,14 +202,13 @@ and (max-device-width : 1024px) {
 }
 
 #footer {
-  background-color: #4C759A;
+  background-color: black;
 }
-
+#colonii,
 #codecademy,
 #great-hearts,
 #meem {
   text-align: left;
-  margin-left: 12.5vw;
 }
 
 #meem {
@@ -252,11 +285,13 @@ span{
   background-color: #4C759A;
   font-family:'Ubuntu Condensed', sans-serif;
   padding-left: 0;
+  padding-right: 0px;
   color: white;
   font-size: 1.4em;
   border: none;
   box-shadow: 2px 2px 3px rgb(8, 35, 59);
   height: 6vh;
+
 }
 
 .list-group-item-icon {
@@ -274,7 +309,7 @@ span{
 
 p {
   padding: 20px;
-  text-align: justify;
+  text-align: left;
   width: 80%;
   margin: 0 auto;
   font-size: 1.2em;
@@ -352,23 +387,31 @@ li {
   padding-top: 2%;
 }
 
-#hearts-logo {
+.project-gallery-img #hearts-logo {
   background-color: black;
 }
 
-#battleship-logo {
+.project-gallery-img #battleship-logo {
   background-color: #7ABA7A;
 }
 
-#shortstack-logo {
+.project-gallery-img #shortstack-logo {
   background-color: #8C489F;
 }
 
-#message-logo {
+.project-gallery-img #message-logo {
   background-color: rgb(135, 206, 250);
 }
 
-#l-train-logo {
+.project-gallery-img #investment-calc-logo {
+  background-color: #FB9062;
+}
+
+.project-gallery-img #mello-jello-logo {
+  background-color: #D4434A;
+}
+
+.project-gallery-img #l-train-logo {
   background-color: #FFCC00;
 }
 
@@ -388,6 +431,12 @@ li {
   background: linear-gradient(to bottom, rgba(47,70,91,1) 0%, rgba(7,34,59,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f465b', endColorstr='#07223b', GradientType=0 );
 }
+
+#gallery-size {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .st-johns-img,
 .dbc-img {
   max-width: 100%;
@@ -405,6 +454,7 @@ li {
 .project-desc {
   padding: 2%;
   border-top: 1px solid black;
+  display: none;
 }
 
 .subject-header {
@@ -444,11 +494,37 @@ li {
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
 
+  .arrow,
+  .arrow-on {
+    width: 13%;
+  }
   .navbar-brand,
   .navbar-nav>li>a{
     font-size: 2.2em;
+    margin-top: .1vh;
   }
 
+  #linkedin > img,
+  #github > img {
+    max-width: 54px;
+    max-height: 54px;
+  }
+
+  #gallery-size {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .list-group-item-icon {
+    max-width: 12vw;
+  }
+
+  #colonii li,
+  #codecademy li,
+  #great-hearts li,
+  #meem li {
+    width: 100%;
+  }
 
   .navbar-top {
     padding-left: 0;
@@ -478,13 +554,14 @@ and (max-device-width : 667px) {
   p {
     width: 90%;
   }
+  #colonii,
   #codecademy,
   #great-hearts,
   #meem{
     font-size: 1.2em;
     margin-left: 0px;
   }
-
+  #colonii p,
   #codecademy p,
   #great-hearts p,
   #meem p{
@@ -528,6 +605,33 @@ and (max-device-width : 667px) {
   }
   #contact-location{
     padding-left: 22%;
+  }
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape) {
+
+  .navbar-brand,
+  .navbar-nav>li>a{
+    font-size: 1.2em;
+  }
+  #gallery-size {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #linkedin > img,
+  #github > img {
+    top: 16px;
+  }
+  .subject-header {
+    min-height: 12vh;
+  }
+
+  .list-group-item-icon {
+    max-width: 5vw;
   }
 }
 

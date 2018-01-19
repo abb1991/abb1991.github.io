@@ -24,6 +24,26 @@ setInterval( ()=> {
   })
 }, 300)
 
+$('#arrow').click(function(){
+  $('html, body').animate({
+            scrollTop: $(window).height()
+          }, 1000)
+})
+
+
+var switchClass = false
+setInterval( ()=> {
+  if (switchClass) {
+    $('#arrow').removeClass('arrow-on')
+    $('#arrow').addClass('arrow')
+    switchClass = false
+    } else {
+    $('#arrow').removeClass('arrow')
+    $('#arrow').addClass('arrow-on')
+    switchClass = true
+  }
+}, 1000)
+
 
 const fade = (function(){
   var icon, text;
@@ -39,6 +59,15 @@ const fade = (function(){
       text = '';
     })
 })();
+
+$('.project-img').hover(function(){
+  // debugger;
+  let id = event.target.id
+  $('.project-ul #' + id).slideToggle(100)
+}, function(){
+  let id = event.target.id
+  $('.project-ul #' + id).slideToggle(100)
+})
 
 
 

@@ -37,7 +37,7 @@
         <div id="navbar-list-items">
           <ul class="nav navbar-nav">
             <li ><a href="/" onclick="showContact()" >Contact</a></li>
-            <li ><a href="./images/alex-bills-resume.pdf">Résumé</a></li>
+            <li ><a href="./images/Alex Bills Resume.pdf">Résumé</a></li>
             <!-- <li ><a href="/random">Random</a></li> -->
             <!-- <li ><a href="/about">About</a></li> -->
           </ul>
@@ -54,6 +54,9 @@
   <body class="container">
     <div id='blank'></div>
     <img class="cover-photo" src="images/bird-mid-flight.jpg">
+    <div class="arrow-container">
+      <img id="arrow" class="arrow" src="images/arrow.png">
+    </div>
     <div class="container">
       <div class="contact">
 
@@ -86,63 +89,73 @@
           <!-- Add a gallery of the project images, which when hovered over highlights the associated li -->
 
           <div class="project-gallery-img">
-            <a class="project-gallery" href="https://message-in-bottle.herokuapp.com/" ><img id="message-logo" class="project-img" src="images/projects/message-logo.png"></a>
-            <a  class="project-gallery" href="" ><img id="hearts-logo" class="project-img" src="images/projects/hearts-logo.png"></a>
-            <!-- <a class="project-gallery" href="https://message-in-bottle.herokuapp.com/" ><img class="project-img" src="images/projects/message-login.png"></a>
-            <a class="project-gallery" href="https://message-in-bottle.herokuapp.com/" ><img class="project-img" src="images/projects/message-create.png"></a> -->
-       <!--      <a class="project-gallery" href="https://shortstack-news.herokuapp.com/" ><img class="project-img" src="images/projects/shortstack-topic.png"></a>
-            <a class="project-gallery" href="https://shortstack-news.herokuapp.com/" ><img class="project-img" src="images/projects/shortstack-user.png"></a> -->
-            <a class="project-gallery" href="https://shortstack-news.herokuapp.com/" ><img id="shortstack-logo" class="project-img" src="images/projects/shortstack-logo.png"></a>
-            <a class="project-gallery" href="" ><img id="l-train-logo" class="project-img" src="images/projects/l-train-logo.png"></a>
-            <a class="project-gallery" href="https://battleboat.herokuapp.com/" ><img id="battleship-logo" class="project-img" src="images/projects/battleship-logo.png"></a>
+            <div id="gallery-size">
+              <a class="project-gallery" href="https://message-in-bottle.herokuapp.com/" ><img id="message-logo" class="project-img" src="images/projects/message-logo.png"></a>
+              <a  class="project-gallery" href="https://github.com/abb1991/hearts" ><img id="hearts-logo" class="project-img" src="images/projects/hearts-logo.png"></a>
+              <a class="project-gallery" href="https://shortstack-news.herokuapp.com/" ><img id="shortstack-logo" class="project-img" src="images/projects/shortstack-logo.png"></a>
+              <a class="project-gallery" href="" ><img id="l-train-logo" class="project-img" src="images/projects/l-train-logo.png"></a>
+              <a class="project-gallery" href="https://battleboat.herokuapp.com/" ><img id="battleship-logo" class="project-img" src="images/projects/battleship-logo.png"></a>
+              <a class="project-gallery" href="https://investment-calc.herokuapp.com/" ><img id="investment-calc-logo" class="project-img" src="images/projects/investment-calc-logo.png"></a>
+              <a class="project-gallery" href="https://mello-jello.herokuapp.com/" ><img id="mello-jello-logo" class="project-img" src="images/projects/mello-jello-logo.png"></a>
+            </div>
           </div>
 
           <ul class="project-ul">
-            <div class="project-desc">
-              <li><a class="projects" href="https://github.com/abb1991/L-train-bingo">L Train Bingo</a></li>
+            <div id="l-train-logo" class="project-desc">
+              <li><a  class="projects" href="https://github.com/abb1991/L-train-bingo">L Train Bingo</a></li>
               <p>L Train Bingo is a Rails/React.js web app that allows users to create real-world bingo cards and play with their friends. All work on this app was a solo effort.</p>
               </div>
-            <div class="project-desc">
+            <div id="shortstack-logo" class="project-desc">
               <li><a class="projects" href="https://github.com/abb1991/alex-project">Shortstack</a></li>
-              <p>Shortstack is a Stack Overflow clone.</p>
+              <p>Shortstack is a Sinatra based blogging site, that allows users to create posts, respond to users, upvote/downvote posts they like/dislike.</p>
             </div>
-            <div class="project-desc">
+            <div id="message-logo" class="project-desc">
               <li><a class="projects" href="https://message-in-bottle.herokuapp.com">Message In A Bottle</a></li>
               <p>Message In A Bottle is a journaling web app that allows users to send and receive anonymous journal entries. The app is centered around creating opportunities for users to create meaningful and raw content without worrying about how they're being perceived by the world at large, while simultaneously writing for an audience. This project was completed over the a week by three developers.</p>
             </div>
-            <div class="project-desc">
+            <div id="battleship-logo" class="project-desc">
               <li><a class="projects" href="https://battleboat.herokuapp.com">Battleboat</a></li>
               <p>Battleboat is a three-day team of five project to create a clone of Battleship. It uses a ruby on rails framework and javascript to create real-time turn based play between users across a network.</p>
             </div>
-            <div class="project-desc">
+            <div id="hearts-logo" class="project-desc">
               <li><a class="projects" href="https://github.com/abb1991/alex-project">Hearts</a></li>
               <p>This solo project creates a playable game of standard Hearts. Using a Sinatra framework and an ERB frontend.</p>
             </div>
+            <div id="investment-calc-logo" class="project-desc">
+              <li><a class="projects" href="https://investment-calc.herokuapp.com/">Investment Calc</a></li>
+              <p>Investment Calc is a business application that takes a predfined, dynamic investment strategy based on investment risk, and returns an ideal investment portfolio based on that risk.</p>
+            </div>
+            <div id="mello-jello-logo" class="project-desc">
+              <li><a class="projects" href="https://mello-jello.herokuapp.com/">Mello Jello</a></li>
+              <p>Mello Jello is a task organizing web app, that allows users to create columns for categories, and numerous cards within those columns. Cards as well as columns can be rearranged. This is a Node.js/Express backend with Vanilla Javascript front.</p>
+            </div>
           </ul>
         <li class="list-group-item subject-header"><img class="list-group-item-icon" src="images/icons/work.png"><p class="about">work</p></li>
+            <h3>Colonii</h3>
+            <h4>Full Stack Developer, May 2017 - Present</h4>
+            <ul id="colonii">
+                <li>Own mission critical features, including database design, user creation/authentication, UI/UX</li>
+                <li>Instituted standardized Git workflow and streamlined Agile-inspired team workflow</li>
+                <li>Lead efforts to build out admin section for ecommerce platform</li>
+            </ul>
             <h3>Codecademy</h3>
             <h4>Technical Advisor, Jan. 2017 - present</h4>
-            <div id="codecademy">
-                <p>Guide students through coding topics one­ on ­one,
-                   help debug code and pass tricky exercises,
-                   offer additional resources, track student progress</p>
-                <p>Support engineering team through git workflow identifying
-                   and reporting bugs/areas of potential platform growth</p>
-            </div>
+            <ul id="codecademy">
+                <li>Guide students through coding topics one­ on ­one help debug code and pass tricky exercises, offer additional resources, track student progress</li>
+                <li>Support engineering team through git workflow identifying and reporting bugs/areas of potential platform growth</li>
+            </ul>
             <h3>Great Hearts Academies</h3>
             <h4>Third Grade Teacher , Scottsdale, AZ 2015 - 2016</h4>
-            <div id="great-hearts">
-              <p >Taught History and Science for third grade</p>
-              <p >breakout sessions for individual and 
-                small group tutoring on math, literacy, and spelling</p>
-            </div>
+            <ul id="great-hearts">
+              <li >Taught History and Science for third grade</li>
+              <li >breakout sessions for individual and small group tutoring on math, literacy, and spelling</li>
+            </ul>
             <h3>Meem Library</h3>
             <h4>Circulation Assistant , Santa Fe, NM 2010 - 2014</h4>
-            <div id="meem">
-                <p>Offered detailed knowledge of the collection to patrons</p>
-                <p>catalogued and maintained collection items,
-                   performed research for college staff/faculty</p>
-            </div>
+            <ul id="meem">
+                <li>Offered detailed knowledge of the collection to patrons</li>
+                <li>catalogued and maintained collection items, performed research for college staff/faculty</li>
+            </ul>
         <li class="list-group-item subject-header"><img class="list-group-item-icon" src="images/icons/education.png"><p class="about">education</p></li>
           <div id="education-li">
             <img class="dbc-img" src="images/dbc.jpg">
@@ -166,3 +179,16 @@
   </nav>
   <script type="text/javascript" src="javascript.js"></script>
 </html>
+
+
+<!-- Google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101223191-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
